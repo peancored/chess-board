@@ -1,0 +1,41 @@
+html {
+  --black: #34495e;
+  --white: #bdc3c7;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid var(--black);
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.square--black {
+  background: var(--black);
+}
+
+.square--white {
+  background: var(--white);
+}
+
+.pawn {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.square--white .pawn {
+  background: #2c3e50;
+}
+
+.square--black .pawn {
+  background: #ecf0f1;
+}
